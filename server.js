@@ -22,8 +22,7 @@ app.use(express.json())
 //     console.log(err);
 //   });
 // })
-app.get('/', (req,res) => {
-    res.send('Hello')
-)}
-
+app.get('/', (req, res) => {
+    res.send("GET Request Called")
+})
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
