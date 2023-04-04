@@ -12,7 +12,7 @@ app.use(cors({
   }));
 
 app.use(express.json())
-app.use(require('./routes/studentRoutes'))
+// app.use(require('./routes/studentRoutes'))
 // app.get('/',(req,res)=>{
 //   student.find().then((result) => {
 //     res.send(result)
@@ -22,5 +22,8 @@ app.use(require('./routes/studentRoutes'))
 //     console.log(err);
 //   });
 // })
+app.get('/', (req,res) => {
+    res.send('Hello')
+}
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
