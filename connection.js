@@ -5,7 +5,7 @@ const MONGO_URL =   "mongodb+srv://parvez:errorlogin@parvez.hcgqer3.mongodb.net/
 
 const client = new MongoClient(MONGO_URL);
 
-await client.connect();
+client.connect();
 
 // await listDatabases(client);
 
